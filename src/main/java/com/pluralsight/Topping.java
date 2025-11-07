@@ -1,4 +1,11 @@
 package com.pluralsight;
 
-public class Toppings {
+public class Topping {
+    private String name;
+    private String toppingType;
+    private boolean extraToppings;
+
+
 }
+
+

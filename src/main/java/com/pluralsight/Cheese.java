@@ -1,4 +1,7 @@
 package com.pluralsight;
 
-public class Cheeese {
+import java.util.ArrayList;
+
+public class Cheese {
+    ArrayList<Cheese> cheeses;
 }
