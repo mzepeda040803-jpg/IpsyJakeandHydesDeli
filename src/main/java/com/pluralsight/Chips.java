@@ -4,4 +4,18 @@ public class Chips {
     private String typeofChips;
     private double priceOfChips;
     //no boolean, chips are required/come with order
+
+
+    public Chips(String typeofChips, double priceOfChips) {
+        this.typeofChips = typeofChips;
+        this.priceOfChips = priceOfChips;
+    }
+
+    public String getTypeofChips() {
+        return typeofChips;
+    }
+
+    public double getPriceOfChips() {
+        return 1.50;
+    }
 }

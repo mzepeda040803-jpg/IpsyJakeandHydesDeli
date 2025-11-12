@@ -4,16 +4,17 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sandwich {
-    private BreadType breadType;
+    private String breadType;
     private int size;
     private boolean toasted;
-    private List<String> meats;
-    private List<String> cheeses;
-    private List<String> toppings;
-    private List<String> sauces;
+    private List<Meat> meats;
+    private List<Cheese> cheeses;
+    private List<Topping> toppings;
+    private List<Sauce> sauces;
+//    private double basePrice;
     private double totalPrice;
 
-    public Sandwich(BreadType breadType, int size, boolean toasted) {
+    public Sandwich(String breadType, int size, boolean toasted) {
         this.breadType = breadType;
         this.size = size;
         this.toasted = toasted;
@@ -21,33 +22,73 @@ public class Sandwich {
         this.cheeses = new ArrayList<>();
         this.toppings = new ArrayList<>();
         this.sauces = new ArrayList<>();
-        this.totalPrice = 0.0;
+
+        double basePrice;
+        switch (size) {
+            case 4:
+                basePrice = 5.50;
+            case 8:
+                basePrice = 7.00;
+            case 12:
+                basePrice = 8.50;
+            default:
+                System.out.println("Invalid option, please try again.");
+                basePrice = 0.0;
+        }
+        this.totalPrice = basePrice;
+
     }
 
-    public void addMeat(String meat) {
+    public String getBreadType() {
+        return breadType;
+    }
+
+    public int getSize() {
+        return size;
+    }
+
+    public boolean isToasted() {
+        return toasted;
+    }
+
+    public void addMeat(Meat meat) {
         meats.add(meat);
     }
 
-    public void addCheese(String cheese) {
+    public void addCheese(Cheese cheese) {
         cheeses.add(cheese);
     }
 
-    public void addToppings(String topping) {
+    public void addToppings(Topping topping) {
         toppings.add(topping);
     }
 
-    public void addSauce(String sauce) {
+    public void addSauce(Sauce sauce) {
         sauces.add(sauce);
     }
 
     public double getTotalPrice() {
-        return totalPrice;
+//        double price = basePrice;
+//        for (String meat: meats) {
+//            price += switch (size) {
+//                case 4 -> 1.00;
+//                case 8 -> 2.00;
+//                case 12 -> 3.00;
+//                default -> 0.0;
+//
+//            }
+//        }
+        return 0;      //placeholder for the right code
     }
+//        double price = size;
+//        this.totalPrice = price;
+//        return totalPrice;
+//    };
 
     @Override
     public String toString() {
         return "Sandwich{" +
-                "breadType=" + breadType +
+                "breadType='" + breadType + '\'' +
                 ", size=" + size +
                 ", toasted=" + toasted +
                 ", meats=" + meats +
