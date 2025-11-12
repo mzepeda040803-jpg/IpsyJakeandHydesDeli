@@ -1,13 +1,11 @@
 package com.pluralsight;
 
-import java.security.PrivateKey;
-import java.util.ArrayList;
-
-public class Cheese {
+public class Cheese extends Topping {
     private String type;
     private boolean extra;
 
     public Cheese(String type, boolean extra) {
+        super(typeOfTopping,extraToppings,premiumToppings);
         this.type = type;
         this.extra = extra;
     }
