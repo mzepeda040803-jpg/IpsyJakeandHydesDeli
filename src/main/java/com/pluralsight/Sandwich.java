@@ -27,10 +27,13 @@ public class Sandwich {
         switch (size) {
             case 4:
                 basePrice = 5.50;
+                break;
             case 8:
                 basePrice = 7.00;
+                break;
             case 12:
                 basePrice = 8.50;
+                break;
             default:
                 System.out.println("Invalid option, please try again.");
                 basePrice = 0.0;
@@ -67,23 +70,39 @@ public class Sandwich {
         sauces.add(sauce);
     }
 
-    public double getTotalPrice() {
-//        double price = basePrice;
-//        for (String meat: meats) {
-//            price += switch (size) {
-//                case 4 -> 1.00;
-//                case 8 -> 2.00;
-//                case 12 -> 3.00;
-//                default -> 0.0;
-//
-//            }
-//        }
-        return 0;      //placeholder for the right code
+    public double getPrice() {
+        return totalPrice;
     }
-//        double price = size;
-//        this.totalPrice = price;
-//        return totalPrice;
-//    };
+
+    public double getTotalPrice() {
+        double price = 0.0;
+
+        switch (size) {
+            case 4 -> price += 5.50;
+            case 8 -> price += 7.00;
+            case 12 -> price += 8.50;
+        }
+
+        for (Meat meat : meats) {
+            price += meat.getPrice(size);
+        }
+
+        for (Cheese cheese : cheeses) {
+            price += cheese.getPrice(size);
+        }
+
+        for (Topping topping : toppings) {
+            price += topping.getPrice(size);
+        }
+
+        for (Sauce sauce : sauces) {
+            price += sauce.getPrice(size);
+        }
+
+        totalPrice = price;
+        return price;
+
+    }
 
     @Override
     public String toString() {
@@ -99,3 +118,19 @@ public class Sandwich {
                 '}';
     }
 }
+
+//        double price = basePrice;
+//        for (String meat: meats) {
+//            price += switch (size) {
+//                case 4 -> 1.00;
+//                case 8 -> 2.00;
+//                case 12 -> 3.00;
+//                default -> 0.0;
+//
+//            }
+//        }
+ //   }
+//        double price = size;
+//        this.totalPrice = price;
+//        return totalPrice;
+//    };

@@ -1,30 +1,26 @@
 package com.pluralsight;
 
 public class Topping {
-    private String typeOfTopping;
-    private boolean extraToppings;
-    private boolean premiumToppings;
+    private String type;
+    private boolean extra;
+    private boolean premium;
 
-    public Topping(String typeOfTopping, boolean extraToppings, boolean premiumToppings) {
-        this.typeOfTopping = typeOfTopping;
-        this.extraToppings = extraToppings;
-        this.premiumToppings = premiumToppings;
+    public Topping(String type, boolean extra, boolean premium) {
+        this.type = type;
+        this.extra = extra;
+        this.premium = premium;
     }
 
-    public String getTypeOfTopping() {
-        return typeOfTopping;
+    public String getType() {
+        return type;
     }
 
-    public boolean isExtraToppings() {
-        return extraToppings;
+    public boolean isExtra() {
+        return extra;
     }
 
-    public boolean isPremiumToppings() {
-        return premiumToppings;
-    }
-
-    public double getTotalPrice () {
-        return 0.0;
+    public boolean isPremium() {
+        return premium;
     }
 
     public double getPrice(int size) {
@@ -34,9 +30,9 @@ public class Topping {
     @Override
     public String toString() {
         return "Topping{" +
-                "typeOfTopping='" + typeOfTopping + '\'' +
-                ", extraToppings=" + extraToppings +
-                ", premiumToppings=" + premiumToppings +
+                "type='" + type + '\'' +
+                ", extra=" + extra +
+                ", premium=" + premium +
                 '}';
     }
 }

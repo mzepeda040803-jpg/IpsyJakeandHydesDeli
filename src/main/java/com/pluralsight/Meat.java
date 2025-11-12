@@ -1,10 +1,11 @@
 package com.pluralsight;
 
-public class Meat {
+public class Meat extends Topping {
     private String type;
     private boolean extra;
 
     public Meat(String type, boolean extra) {
+        super(type, true, extra);
         this.type = type;
         this.extra = extra;
     }
@@ -17,7 +18,7 @@ public class Meat {
         return extra;
     }
 
-    public double getTotalPrice (int size) {
+    public double getPrice (int size) {
         double price = switch (size) {
             case 4 -> 1.00;
             case 8 -> 2.00;
@@ -25,7 +26,7 @@ public class Meat {
             default -> 0.0;
         };
 
-        if (extra) {
+        if (isExtra()) {
             price += switch (size) {
                 case 4 -> 0.50;
                 case 8 -> 1.00;

@@ -3,6 +3,45 @@ package com.pluralsight;
 import java.util.List;
 
 public class Order {
+    private List<Sandwich> sandwiches;
+    private List<Drinks> drinks;
+    private List<Chips> chips;
+    private double totalPrice;
+
+    public Order(List<Sandwich> sandwiches, List<Drinks> drinks, List<Chips> chips, double totalPrice) {
+        this.sandwiches = sandwiches;
+        this.drinks = drinks;
+        this.chips = chips;
+        this.totalPrice = totalPrice;
+    }
+
+    public List<Sandwich> getSandwiches() {
+        return sandwiches;
+    }
+
+    public List<Drinks> getDrinks() {
+        return drinks;
+    }
+
+    public List<Chips> getChips() {
+        return chips;
+    }
+
+    public double getTotalPrice() {
+        return totalPrice;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 //    List<Sandwich> sandwiches = get Sandwich;
 //    List<Drinks>; ...same for here, getter
 //    List<Chips>; ...same, need getter
@@ -37,4 +76,4 @@ public class Order {
 
 
 
-}
+

@@ -5,7 +5,7 @@ public class Cheese extends Topping {
     private boolean extra;
 
     public Cheese(String type, boolean extra) {
-        super(typeOfTopping,extraToppings,premiumToppings);
+        super(type, true, extra);
         this.type = type;
         this.extra = extra;
     }
@@ -18,7 +18,7 @@ public class Cheese extends Topping {
         return extra;
     }
 
-    public double getTotalPrice (int size) {
+    public double getPrice (int size) {
         double price = switch (size) {
             case 4 -> 0.75;
             case 8 -> 1.50;
@@ -26,7 +26,7 @@ public class Cheese extends Topping {
             default -> 0.0;
         };
 
-        if (extra) {
+        if (isExtra()) {
             price += switch (size) {
                 case 4 -> 0.30;
                 case 8 -> 0.60;
