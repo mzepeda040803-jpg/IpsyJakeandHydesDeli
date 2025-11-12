@@ -1,25 +1,26 @@
 package com.pluralsight;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Order {
     private List<Sandwich> sandwiches;
-    private List<Drinks> drinks;
+    private List<Drink> drinks;
     private List<Chips> chips;
     private double totalPrice;
 
-    public Order(List<Sandwich> sandwiches, List<Drinks> drinks, List<Chips> chips, double totalPrice) {
-        this.sandwiches = sandwiches;
-        this.drinks = drinks;
-        this.chips = chips;
-        this.totalPrice = totalPrice;
+    public Order() {
+        sandwiches = new ArrayList<>();
+        drinks = new ArrayList<>();
+        chips = new ArrayList<>();
+        totalPrice = 0.0;
     }
 
     public List<Sandwich> getSandwiches() {
         return sandwiches;
     }
 
-    public List<Drinks> getDrinks() {
+    public List<Drink> getDrinks() {
         return drinks;
     }
 
@@ -30,12 +31,38 @@ public class Order {
     public double getTotalPrice() {
         return totalPrice;
     }
+
+    public void addSandwich(Sandwich sandwich) {
+        sandwiches.add(sandwich);
+        totalPrice += sandwich.getTotalPrice();
+
+    }
+
+    public void addDrink(Drink drink) {
+        drinks.add(drink);
+        totalPrice += drink.getPriceOfDrink();
+
+    }
+
+    public void addChips(Chips chips) {
+        this.chips.add(chips);
+        totalPrice += chips.getPriceOfChips();
+
+    }
+    public void getTotal() {
+
+    }
+
+    @Override
+    public String toString() {
+        return "Order{" +
+                "sandwiches=" + sandwiches +
+                ", drinks=" + drinks +
+                ", chips=" + chips +
+                ", totalPrice=" + totalPrice +
+                '}';
+    }
 }
-
-
-
-
-
 
 
 

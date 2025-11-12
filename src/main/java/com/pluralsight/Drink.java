@@ -1,11 +1,11 @@
 package com.pluralsight;
 
-public class Drinks {
+public class Drink {
     private String drinkName;
     private String size;
     private double priceOfDrink;
 
-    public Drinks(String drinkName, String size, double priceOfDrink) {
+    public Drink(String drinkName, String size, double priceOfDrink) {
         this.drinkName = drinkName;
         this.size = size;
         this.priceOfDrink = priceOfDrink;
