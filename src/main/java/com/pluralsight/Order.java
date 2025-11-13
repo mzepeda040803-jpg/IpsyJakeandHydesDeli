@@ -49,8 +49,42 @@ public class Order {
         totalPrice += chips.getPriceOfChips();
 
     }
-    public void getTotal() {
 
+    public double getTotal() {
+        return totalPrice;
+
+    }
+
+    public String getOrderSummary() {
+        StringBuilder orderSummary = new StringBuilder();
+
+        orderSummary.append("---ORDER SUM-MEW-RY---\n");
+
+        if (!sandwiches.isEmpty()) {
+            orderSummary.append("\nSandwiches:\n");
+            for (Sandwich sandwich : sandwiches) {
+                orderSummary.append(" - ").append(sandwich.toString()).append("\n");
+            }
+        }
+
+        if (!drinks.isEmpty()) {
+            orderSummary.append("\nDrinks:\n");
+            for (Drink drink : drinks) {
+                orderSummary.append(" - ").append(drink.toString()).append("\n");
+            }
+        }
+        if (!chips.isEmpty()) {
+            orderSummary.append("\nChips:\n");
+            for (Chips chips : chips) {
+                orderSummary.append(" - ").append(chips.toString()).append("\n");
+            }
+        }
+
+        orderSummary.append("\n---EEKEEKEEK---");
+        orderSummary.append(String.format("Total: $%.2f\n", totalPrice));
+        orderSummary.append("--- =^>.<^= ---");
+
+        return orderSummary.toString();
     }
 
     @Override
@@ -65,7 +99,8 @@ public class Order {
 }
 
 
-
+//decide which toString to use
+//which os cleaner...which is easier ot read???
 
 
 

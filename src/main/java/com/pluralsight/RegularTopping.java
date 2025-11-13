@@ -1,11 +1,9 @@
 package com.pluralsight;
 
-import java.util.ArrayList;
-
-public class Sauce extends Topping {
+public class RegularTopping extends Topping {
     private String type;
 
-    public Sauce(String type) {
+    public RegularTopping(String type) {
         super(type, false, false);
 //        this.type = type;
     }

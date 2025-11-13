@@ -5,9 +5,9 @@ public class Cheese extends Topping {
     private boolean extra;
 
     public Cheese(String type, boolean extra) {
-        super(type, true, extra);
-        this.type = type;
-        this.extra = extra;
+        super(type, extra, true);
+//        this.type = type;
+//        this.extra = extra;
     }
 
     public String getType() {

@@ -38,7 +38,7 @@ public class Sandwich {
                 System.out.println("Invalid option, please try again.");
                 basePrice = 0.0;
         }
-        this.totalPrice = basePrice;
+        this.totalPrice = 0.0;
 
     }
 
