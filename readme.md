@@ -72,3 +72,5 @@ Of course the last method followed suit but still, it was so satisfying to write
 Add image:
 ![Class Diagram]![](C:\Users\Student\Pictures\Screenshots\Screenshot 2025-11-14 080551.png)
 
+
+
