@@ -11,6 +11,7 @@ public class Sandwich {
     private List<Cheese> cheeses;
     private List<Topping> toppings;
     private List<Sauce> sauces;
+    private List<Side> sides;
 //    private double basePrice;
     private double totalPrice;
 
@@ -22,6 +23,7 @@ public class Sandwich {
         this.cheeses = new ArrayList<>();
         this.toppings = new ArrayList<>();
         this.sauces = new ArrayList<>();
+        this.sides = new ArrayList<>();
 
         double basePrice;
         switch (size) {
@@ -70,8 +72,16 @@ public class Sandwich {
         sauces.add(sauce);
     }
 
+    public void addSide(Side side) {
+        sides.add((Side) sides);
+    }
+
     public double getPrice() {
         return totalPrice;
+    }
+
+    public void addDrink(Drink drink) {
+        drink.getDrinkName();
     }
 
     public double getTotalPrice() {
@@ -117,6 +127,8 @@ public class Sandwich {
                 ", totalPrice=" + totalPrice +
                 '}';
     }
+
+
 }
 
 //        double price = basePrice;

@@ -6,7 +6,7 @@ public class Chips {
     //no boolean, chips are required/come with order
 
 
-    public Chips(String typeofChips, double priceOfChips) {
+    public Chips(String typeofChips)  {
         this.typeofChips = typeofChips;
 //        this.priceOfChips = priceOfChips;
     }
@@ -19,3 +19,4 @@ public class Chips {
         return 1.50;
     }
 }
+//standalone class, not extended to anything

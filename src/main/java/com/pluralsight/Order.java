@@ -7,25 +7,27 @@ public class Order {
     private List<Sandwich> sandwiches;
     private List<Drink> drinks;
     private List<Chips> chips;
+    private List<Drink> drink;
     private double totalPrice;
 
     public Order() {
         sandwiches = new ArrayList<>();
         drinks = new ArrayList<>();
         chips = new ArrayList<>();
+        drinks = new ArrayList<>();
         totalPrice = 0.0;
     }
 
     public List<Sandwich> getSandwiches() {
-        return sandwiches;
+        return sandwiches; //should return sammy
     }
 
     public List<Drink> getDrinks() {
-        return drinks;
+        return drinks;  //should return drink
     }
 
     public List<Chips> getChips() {
-        return chips;
+        return chips;  //should return chips; chips come with every order...maybe just prompt for name
     }
 
     public double getTotalPrice() {
@@ -35,18 +37,22 @@ public class Order {
     public void addSandwich(Sandwich sandwich) {
         sandwiches.add(sandwich);
         totalPrice += sandwich.getTotalPrice();
+        //had to switch some stuff around to make it not angry
 
     }
 
     public void addDrink(Drink drink) {
         drinks.add(drink);
         totalPrice += drink.getPriceOfDrink();
+        //also had to switch stuff around
+        //same format as above
 
     }
 
     public void addChips(Chips chips) {
         this.chips.add(chips);
         totalPrice += chips.getPriceOfChips();
+        //same format as before
 
     }
 
@@ -55,6 +61,7 @@ public class Order {
 
     }
 
+    //customize this part with cat themes sprinkled throughout if possible
     public String getOrderSummary() {
         StringBuilder orderSummary = new StringBuilder();
 
@@ -86,6 +93,9 @@ public class Order {
 
         return orderSummary.toString();
     }
+    //had to research if i was using the \n thing correctly...made sure it was right
+    //might switch to a different way of writing it
+    //will return to this later
 
     @Override
     public String toString() {

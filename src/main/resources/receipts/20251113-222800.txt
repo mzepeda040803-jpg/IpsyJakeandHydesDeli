@@ -1,0 +1,13 @@
+---ORDER SUM-MEW-RY---
+
+Sandwiches:
+ - Sandwich{breadType='wraps', size=12, toasted=true, meats=[Topping{type='chicken', extra=true, premium=true}, Topping{type='steak', extra=false, premium=true}], cheeses=[Topping{type='provolone', extra=false, premium=true}], toppings=[Topping{type='lettuce', extra=false, premium=false}, Topping{type='onions', extra=false, premium=false}, Topping{type='tomatoes', extra=false, premium=false}, Topping{type='onions', extra=false, premium=false}, Topping{type='guacamole', extra=false, premium=false}], sauces=[Topping{type='thousand', extra=false, premium=false}, Topping{type='island', extra=false, premium=false}], totalPrice=16.75}
+
+Drinks:
+ - com.pluralsight.Drink@439f5b3d
+
+Chips:
+ - com.pluralsight.Chips@1d56ce6a
+
+---EEKEEKEEK---Total: $18.25
+--- =^>.<^= ---

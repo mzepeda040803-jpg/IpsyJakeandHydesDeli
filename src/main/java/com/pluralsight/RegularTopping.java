@@ -12,3 +12,5 @@ public class RegularTopping extends Topping {
         return 0.0;
     }
 }
+//gonna be used for the regular toppings listed in the file;
+//try to make it look neat in charts
