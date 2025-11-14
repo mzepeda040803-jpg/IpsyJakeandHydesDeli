@@ -70,7 +70,9 @@ Of course the last method followed suit but still, it was so satisfying to write
 ## This is my Diagram for the project, it was not fun
 
 Add image:
-![Class Diagram]![](C:\Users\Student\Pictures\Screenshots\Screenshot 2025-11-14 080551.png)
+![Class Diagram]![](C:\Users\Student\Pictures\Screenshots\Screenshot%202025-11-14%20080551.png)
+
+![](C:\Users\Student\Pictures\Screenshots\Screenshot 2025-11-14 080551.png)
 
 
 
