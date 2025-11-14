@@ -31,5 +31,11 @@ public class Drink {
 
     }
 
-
+    @Override
+    public String toString() {
+        return "Drink{" +
+                "drinkName='" + drinkName + '\'' +
+                ", size='" + size + '\'' +
+                '}';
+    }
 }

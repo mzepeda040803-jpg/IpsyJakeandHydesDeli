@@ -18,5 +18,13 @@ public class Chips {
     public double getPriceOfChips() {
         return 1.50;
     }
+
+    @Override
+    public String toString() {
+        return "Chips{" +
+                "typeofChips='" + typeofChips + '\'' +
+                '}';
+    }
 }
+
 //standalone class, not extended to anything
