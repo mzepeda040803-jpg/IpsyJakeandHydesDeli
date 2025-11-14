@@ -1,4 +1,4 @@
-package com.pluralsight;
+package com.pluralsight.data;
 
 public class Side extends Topping {
 //    private String type;

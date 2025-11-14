@@ -1,10 +1,10 @@
-package com.pluralsight;
+package com.pluralsight.data;
 
-public class Cheese extends Topping {
+public class Meat extends Topping {
     private String type;
     private boolean extra;
 
-    public Cheese(String type, boolean extra) {
+    public Meat(String type, boolean extra) {
         super(type, extra, true);
 //        this.type = type;
 //        this.extra = extra;
@@ -20,21 +20,21 @@ public class Cheese extends Topping {
 
     public double getPrice (int size) {
         double price = switch (size) {
-            case 4 -> 0.75;
-            case 8 -> 1.50;
-            case 12 -> 2.25;
+            case 4 -> 1.00;
+            case 8 -> 2.00;
+            case 12 -> 3.00;
             default -> 0.0;
         };
 
         if (isExtra()) {
             price += switch (size) {
-                case 4 -> 0.30;
-                case 8 -> 0.60;
-                case 12 -> 0.90;
+                case 4 -> 0.50;
+                case 8 -> 1.00;
+                case 12 -> 1.50;
                 default -> 0.0;
             };
-
         }
+
         return price;
     }
 

@@ -1,4 +1,10 @@
-package com.pluralsight;
+package com.pluralsight.UserInterfaceUI;
+
+import com.pluralsight.*;
+import com.pluralsight.data.*;
+import com.pluralsight.model.Order;
+import com.pluralsight.model.ReceiptWriter;
+import com.pluralsight.model.Sandwich;
 
 import java.util.Scanner;
 

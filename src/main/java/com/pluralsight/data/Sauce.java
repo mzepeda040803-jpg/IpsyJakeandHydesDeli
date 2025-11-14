@@ -1,6 +1,4 @@
-package com.pluralsight;
-
-import java.util.ArrayList;
+package com.pluralsight.data;
 
 public class Sauce extends Topping {
     private String type;

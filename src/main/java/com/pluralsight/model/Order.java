@@ -1,4 +1,7 @@
-package com.pluralsight;
+package com.pluralsight.model;
+
+import com.pluralsight.Chips;
+import com.pluralsight.Drink;
 
 import java.util.ArrayList;
 import java.util.List;
