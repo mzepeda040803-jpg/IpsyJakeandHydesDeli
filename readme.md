@@ -74,5 +74,6 @@ Add image:
 
 ![](C:\Users\Student\Pictures\Screenshots\Screenshot 2025-11-14 080551.png)
 
+[](https://app.diagrams.net/?libs=general;uml#G1U1QLlNBH1Vn7ZNbe3GdicJLRRiDKEj9L#%7B%22pageId%22%3A%22TLd60H5PPKbg-thWZayv%22%7D)
 
 
