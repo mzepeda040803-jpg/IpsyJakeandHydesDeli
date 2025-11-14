@@ -27,7 +27,8 @@ add a drink with size; the same goes for the chips options, minus choosing a siz
 The Code rounds off with your order being put together, for which you confirm your order.
 
 After your order is confirmed, you get a receipt with your order details. The fun part: there are 
-cat puns and cat sarcasm littered throughout the program. See if you can find them all.
+cat puns and cat sarcasm littered throughout the program. See if you can find them all. On a side note,
+can you see some of the frustration coming in through my comments?
 
 ## My favorite part of the Code:
 ```java
@@ -65,4 +66,9 @@ As much as I struggled to write everything, using keyboard and IntelliJ shortcut
 was so SATISFYING. It was the equivalent of all the fireworks going off at once
 at the end of a show. The grand finale...the "finally everything is coming together!!" 
 Of course the last method followed suit but still, it was so satisfying to write, It was my favorite part.
+
+## This is my Diagram for the project, it was not fun
+
+Add image:
+![Class Diagram]![](C:\Users\Student\Pictures\Screenshots\Screenshot 2025-11-14 080551.png)
 
